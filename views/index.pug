@@ -1,5 +1,42 @@
 extends layout
 
+block head
+  link(rel='stylesheet', href='/stylesheets/index.css')
+
 block content
-  h1= title
-  p Welcome to #{title}
+  div(id='modal' class='modal')
+    div(id='create_room' class='create_room')
+      div(class='title')
+        div(class='left') Criar sala
+        div(class='right')
+          button(onclick='document.getElementById("modal").style.display="none"')
+      
+      div(class='content' style='flex-direction: column; align-items: center;')
+  
+  nav(class='top-nav')
+    div(class='left')
+      a(class='home') Gartico
+
+    div(class='right')
+      button(class='tool-btn' onclick='window.location.href = "/login"') Login
+      button(onclick='window.location.href = "/register"') Cadastro
+      button Sobre
+  
+  div(class='container')
+    div(class='rooms')
+      div(class='title')
+        div(class='left') Salas abertas
+        div(class='right')
+          button() Criar sala
+          a(style='align-self:center') Jogadores em sala
+      
+      div(class='content' style='display:flex; flex-direction: row')
+        div(class='room-card')
+          div(class='room-card-title') Sala 0
+          div(class='room-card-content')
+            ul
+              li Categoria
+              li Subgategoria
+              li Jogadores
+              li
+                button(onclick='') Entrar
