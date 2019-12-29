@@ -1,3 +1,46 @@
+@font-face {
+    font-family: Type Grotesk;
+    src: url('/fonts/Typo Grotesk Rounded Demo.otf');
+}
+
 body {
-    background-color: #333;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Type Grotesk';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    orientation: landscape;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+button {
+    height: 40px;
+    font-family: 'Type Grotesk';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cb2020;
+    color: white;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #fa4a4a;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
 }
