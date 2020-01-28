@@ -1,0 +1,17 @@
+extends layout
+
+block head
+
+block content
+    div(class="container")
+        div(class="login")
+            div(class="title")
+                h1="Login " + method
+            
+            div(class="content")
+            form(action="" method="post")
+                label Login
+                input(type="text" placeholder="username" name="username")
+                label Senha
+                input(type="password" placeholder="**********" name="password")
+                button(type="submit") Login
