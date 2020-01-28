@@ -3,6 +3,8 @@ extends layout
 block head
     script(src="/socket.io/socket.io.js")
 
+    script(type="text/javascript") var io = io()
+
 block content
   h1= title
   p Welcome to #{title}
