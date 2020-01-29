@@ -4,5 +4,23 @@
     "express-session": "^1.17.0",
     "pug": "^2.0.4",
     "socket.io": "^2.3.0"
-  }
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "name": "gartico-nodejs",
+  "description": "a gartic clone",
+  "version": "0.0.1",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilmarxd/gartico-nodejs.git"
+  },
+  "author": "gilmarxd, paulocs, maycon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gilmarxd/gartico-nodejs/issues"
+  },
+  "homepage": "https://github.com/gilmarxd/gartico-nodejs#readme"
 }
