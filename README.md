@@ -6,4 +6,4 @@
 ### 2. install packages
 ```npm install```
 ### 3. init
-```ǹpm start```
+```npm start```
